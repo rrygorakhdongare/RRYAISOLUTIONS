@@ -12,12 +12,12 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+    { name: 'Team', path: '/team' },   // ✅ Added Team right after About
     { name: 'Services', path: '/services' },
     { name: 'Education', path: '/education' },
     { name: 'Contact', path: '/contact' },
   ];
 
-  // fallback state if img fails to load
   const [imgFailed, setImgFailed] = useState(false);
 
   return (
@@ -31,7 +31,6 @@ const Navbar: React.FC = () => {
             className="flex items-center py-2 group"
             onClick={() => setIsOpen(false)}
           >
-            {/* optional rounded bg for better contrast on white logos */}
             <div className="flex items-center">
               {!imgFailed ? (
                 <img
@@ -43,7 +42,6 @@ const Navbar: React.FC = () => {
                 />
               ) : (
                 <div className="flex items-center">
-                  {/* Fallback: text/logo svg or plain text */}
                   <span className="text-primary font-bold text-base md:text-lg">
                     RRY
                   </span>

@@ -1,5 +1,18 @@
+import { 
+  ServiceItem, 
+  EducationProgram, 
+  TeamMember, 
+  Testimonial, 
+  ContactInfo, 
+  WorkProcessStep 
+} from "./types";
 
-import { ServiceItem, EducationProgram, TeamMember, Testimonial, ContactInfo, WorkProcessStep } from './types';
+// ⭐ Correct local image imports
+import RavikiranImg from "./assets/Ravikiran.png";
+import RajendraImg from "./assets/Rajendra.png";
+import YogeshImg from "./assets/Yogesh.png";
+import GorakhImg from "./assets/Gorakh.png";
+import NamrataImg from "./assets/Namrata.png";
 
 export const HERO_CONTENT = {
   title: "RRY AI SOLUTIONS",
@@ -108,36 +121,37 @@ export const EDUCATION_PROGRAMS: EducationProgram[] = [
   }
 ];
 
+// ⭐ Updated team with all members + local images
 export const TEAM_DATA: TeamMember[] = [
   {
-    name: "Rajesh Yadav",
-    role: "Founder & CEO",
-    description: "Visionary leader with expertise in AI, IoT, and enterprise software.",
-    imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+    name: "Ravikiran Shelar",
+    role: "CEO, Director",
+    description: "Provides strategic leadership and drives innovation across AI, IoT, and software development.",
+    imageUrl: RavikiranImg
   },
   {
-    name: "Amit Sharma",
-    role: "Lead Software Engineer",
-    description: "Full-stack and cloud systems expert.",
-    imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+    name: "Rajendra Shelar",
+    role: "MD, Director",
+    description: "Oversees operations, business development, and organizational growth.",
+    imageUrl: RajendraImg
   },
   {
-    name: "Neha Patel",
-    role: "AI/ML Engineer",
-    description: "Specialist in ML, analytics, and automation.",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+    name: "Yogesh Shelke",
+    role: "CTO, Director",
+    description: "Leads technology strategy, engineering teams, and advanced product development initiatives.",
+    imageUrl: YogeshImg
   },
   {
-    name: "Karan Mehta",
-    role: "IoT Solutions Architect",
-    description: "Expert in industrial and commercial IoT.",
-    imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
+    name: "Gorakh Dongare",
+    role: "IT Head",
+    description: "Manages IT infrastructure, cybersecurity, and enterprise technology planning.",
+    imageUrl: GorakhImg
   },
   {
-    name: "Priya Desai",
-    role: "UI/UX & Product Designer",
-    description: "Creates user-centric product designs.",
-    imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
+    name: "Namrata Gaikwad",
+    role: "Software Engineer",
+    description: "Develops scalable applications and contributes to full-stack development and system architecture.",
+    imageUrl: NamrataImg
   }
 ];
 

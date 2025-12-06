@@ -66,11 +66,39 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
             <ul className="space-y-3">
-              <li><Link to="/" className="text-gray-400 hover:text-primary transition-colors text-sm">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-primary transition-colors text-sm">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">Services</Link></li>
-              <li><Link to="/education" className="text-gray-400 hover:text-primary transition-colors text-sm">Education</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-primary transition-colors text-sm">Contact</Link></li>
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  About Us
+                </Link>
+              </li>
+
+              {/* ⭐ Added Team Link */}
+              <li>
+                <Link to="/team" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Team
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/education" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Education
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -78,11 +106,31 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
             <ul className="space-y-3">
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">AI & Machine Learning</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">IoT Solutions</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">Custom Software</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">Cloud & DevOps</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">UI/UX Design</Link></li>
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  AI & Machine Learning
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  IoT Solutions
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Custom Software
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  Cloud & DevOps
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-gray-400 hover:text-primary transition-colors text-sm">
+                  UI/UX Design
+                </Link>
+              </li>
             </ul>
           </div>
 
