@@ -1,23 +1,26 @@
 import { 
-  ServiceItem, 
-  EducationProgram, 
-  TeamMember, 
-  Testimonial, 
-  ContactInfo, 
-  WorkProcessStep 
+  ServiceItem,
+  EducationProgram,
+  TeamMember,
+  Testimonial,
+  ContactInfo,
+  WorkProcessStep
 } from "./types";
 
 // ⭐ Correct local image imports
 import RavikiranImg from "./assets/Ravikiran.png";
 import RajendraImg from "./assets/Rajendra.png";
 import YogeshImg from "./assets/Yogesh.png";
+import RakeshImg from "./assets/Rakesh.jpg"; // ⭐ CFO
 import GorakhImg from "./assets/Gorakh.png";
-import NamrataImg from "./assets/Namrata.png";
+import DhanshreeImg from "./assets/Dhanshree.png";
+import DhaneshvariImg from "./assets/Dhaneshvari.png"; // ⭐ New Team Member
 
 export const HERO_CONTENT = {
   title: "RRY AI SOLUTIONS",
   subtitle: "Innovating the Future with Intelligent Software, AI & IoT",
-  description: "We build powerful, scalable, and smart solutions that accelerate your digital transformation."
+  description:
+    "We build powerful, scalable, and smart solutions that accelerate your digital transformation."
 };
 
 export const ABOUT_CONTENT = {
@@ -33,7 +36,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     title: "AI & Machine Learning",
     iconKey: "brain",
-    imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&q=80",
     items: [
       "Predictive analytics",
       "AI automation systems",
@@ -45,7 +49,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     title: "Custom Software Development",
     iconKey: "code",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80",
     items: [
       "Web applications",
       "Android & iOS apps",
@@ -57,7 +62,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     title: "Website Development & UI/UX",
     iconKey: "layout",
-    imageUrl: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80",
     items: [
       "Modern responsive website design",
       "User interface & dashboard design",
@@ -68,7 +74,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     title: "IoT Solutions",
     iconKey: "wifi",
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
     items: [
       "Smart home & office IoT systems",
       "Industrial IoT monitoring",
@@ -80,7 +87,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     title: "Cloud & DevOps",
     iconKey: "cloud",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80",
     items: [
       "AWS, Azure, GCP deployment",
       "DevOps CI/CD pipelines",
@@ -103,55 +111,95 @@ export const WHY_CHOOSE_US: string[] = [
 export const EDUCATION_PROGRAMS: EducationProgram[] = [
   {
     title: "Student Internship Programs",
-    description: "Gain real-world experience working on live projects under expert mentorship. Perfect for students looking to bridge the gap between theory and practice.",
-    features: ["Live Project Experience", "Mentorship from Industry Experts", "Certification upon Completion", "Job Placement Assistance"],
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+    description:
+      "Gain real-world experience working on live projects under expert mentorship.",
+    features: [
+      "Live Project Experience",
+      "Mentorship from Industry Experts",
+      "Certification upon Completion",
+      "Job Placement Assistance"
+    ],
+    imageUrl:
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
   },
   {
     title: "Industrial Training",
-    description: "Comprehensive training modules designed to equip you with in-demand skills in AI, IoT, and Full Stack Development.",
-    features: ["Hands-on Coding Sessions", "Latest Tech Stack", "IoT Hardware Prototyping", "Project-Based Learning"],
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+    description:
+      "Comprehensive training modules designed to equip you with in-demand skills.",
+    features: [
+      "Hands-on Coding Sessions",
+      "Latest Tech Stack",
+      "IoT Hardware Prototyping",
+      "Project-Based Learning"
+    ],
+    imageUrl:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
   },
   {
     title: "Corporate Workshops",
-    description: "Tailored workshops for companies looking to upskill their workforce in emerging technologies and digital transformation strategies.",
-    features: ["Customized Curriculum", "On-site or Remote Training", "AI Adoption Strategies", "Team Building & Innovation"],
-    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+    description:
+      "Tailored workshops for companies looking to upskill their workforce.",
+    features: [
+      "Customized Curriculum",
+      "On-site or Remote Training",
+      "AI Adoption Strategies",
+      "Team Building & Innovation"
+    ],
+    imageUrl:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
   }
 ];
 
-// ⭐ Updated team with all members + local images
+// ⭐ TEAM DATA
 export const TEAM_DATA: TeamMember[] = [
   {
     name: "Ravikiran Shelar",
     role: "CEO, Director",
-    description: "Provides strategic leadership and drives innovation across AI, IoT, and software development.",
+    description:
+      "Provides strategic leadership and drives innovation across AI, IoT, and software development.",
     imageUrl: RavikiranImg
   },
   {
     name: "Rajendra Shelar",
     role: "MD, Director",
-    description: "Oversees operations, business development, and organizational growth.",
+    description:
+      "Oversees operations, business development, and organizational growth.",
     imageUrl: RajendraImg
   },
   {
     name: "Yogesh Shelke",
     role: "CTO, Director",
-    description: "Leads technology strategy, engineering teams, and advanced product development initiatives.",
+    description:
+      "Leads technology strategy, engineering teams, and advanced product development initiatives.",
     imageUrl: YogeshImg
   },
   {
-    name: "Gorakh Dongare",
-    role: "IT Head",
-    description: "Manages IT infrastructure, cybersecurity, and enterprise technology planning.",
+    name: "CA Rakesh Ishi",
+    role: "CFO",
+    description:
+      "Oversees financial strategy, budgeting, compliance, taxation, and long-term fiscal planning.",
+    imageUrl: RakeshImg
+  },
+  {
+    name: "Gorakhnath Dongare",
+    role: "IT Head, AI/ML Engineer & Software Engineer",
+    description:
+      "Manages IT infrastructure, cybersecurity, and enterprise technology planning.",
     imageUrl: GorakhImg
   },
   {
-    name: "Namrata Gaikwad",
+    name: "Dhanshree Avhad",
+    role: "Digital Marketing Manager",
+    description:
+      "Leads digital marketing strategy, brand growth, performance campaigns, and online visibility.",
+    imageUrl: DhanshreeImg
+  },
+  {
+    name: "Dhaneshvari Sonawane",
     role: "Software Engineer",
-    description: "Develops scalable applications and contributes to full-stack development and system architecture.",
-    imageUrl: NamrataImg
+    description:
+      "Contributes to application development, feature implementation, and building scalable software solutions.",
+    imageUrl: DhaneshvariImg
   }
 ];
 
@@ -163,8 +211,9 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const CONTACT_INFO: ContactInfo = {
   email: "rryaisolutions@gmail.com",
-  phone: "+91-9370665082",
-  location: "Laxmi Enclave Lane no.2, Sharanpur Rd, next to Chai Tapri Cafe, Pandit Colony, Nashik, Maharashtra 422002"
+  phone: "+91-9699185883",
+  location:
+    "Laxmi Enclave Lane no.2, Sharanpur Rd, next to Chai Tapri Cafe, Pandit Colony, Nashik, Maharashtra 422002"
 };
 
 export const WORK_PROCESS: WorkProcessStep[] = [
